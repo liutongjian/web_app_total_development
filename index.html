@@ -7,18 +7,18 @@
     <title>IT教育网2015课程学习情况</title>
 
     <!-- 载入所有的组件资源 -->
-    <script type="text/javascript" src="/js/lib/jquery.js"></script>
-    <script type="text/javascript" src="/js/lib/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/js/lib/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
 
 
     <!-- H5对象：进行内容管理 -->
 
-    <script type="text/javascript" src="/js/H5.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/H5.css" >
+    <script type="text/javascript" src="js/H5.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/H5.css" >
 
-    <script type="text/javascript" src="/js/H5_loading.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/H5_loading.css" >
+    <script type="text/javascript" src="js/H5_loading.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/H5_loading.css" >
 
     <!-- 页面逻辑的样式 -->
     <style type="text/css">
@@ -29,10 +29,10 @@
         }
 
         .h5_page{
-            background-image: url(/imgs/page_bg.png);
+            background-image: url(imgs/page_bg.png);
         }
         .h5_page_face{
-            background-image: url(/imgs/face_bg.png);
+            background-image: url(imgs/face_bg.png);
         }
         .h5_component_name_slogan{
             -webkit-animation:rock 2s infinite 2s;
@@ -50,7 +50,7 @@
         }
 
         .h5_component_name_caption{
-            background-image: url(/imgs/page_caption_bg.png);
+            background-image: url(imgs/page_caption_bg.png);
             width: 283px;
             height: 160px;
             text-align: center;
@@ -87,12 +87,12 @@
 
         var res = [
             'Base','Bar','Bar_v','Point','Polyline',
-            'Radar','Pie','Ring'
+            ,'Pie','Ring'
             ];
         var html = [];
         for(s in res){
-            html.push('<script type="text/javascript" src="/js/H5Component'+res[s]+'.js"><\/script>');
-            html.push('<link rel="stylesheet" type="text/css" href="/css/H5Component'+res[s]+'.css">');
+            html.push('<script type="text/javascript" src="js/H5Component'+res[s]+'.js"><\/script>');
+            html.push('<link rel="stylesheet" type="text/css" href="css/H5Component'+res[s]+'.css">');
 
         }
         document.write( html.join('') );
@@ -197,7 +197,7 @@
                     center:true,
                     width:515,
                     height:305,
-                    bg:'/imgs/p1_people.png',
+                    bg:'imgs/p1_people.png',
                     css:{
                         opacity:0,
                         bottom:0
@@ -480,7 +480,7 @@
                     }
                 })
 
-            .loader( [ '/imgs/tail_back.png','/imgs/tail_share.png','/imgs/tail_slogan.png' ] );
+            .loader( [ 'imgs/tail_back.png','imgs/tail_share.png','imgs/tail_slogan.png' ] );
 
         });
     </script>
